@@ -1,7 +1,13 @@
-import React from 'react';
-import { Instagram, Music, Send, Twitter } from 'lucide-react';
+"use client"
+import React, { useState } from 'react';
+import { Instagram, Music, Send, Twitter, X } from 'lucide-react';
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-purple-100">
       {/* Header */}
@@ -66,13 +72,16 @@ export default function Home() {
             helping kids learn through love and laughter
           </p>
           
-          <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl">
+          <button 
+            onClick={openModal}
+            className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-2xl"
+          >
             Join The Waitlist
           </button>
         </div>
       </section>
 
-{/* Features Section */}
+      {/* Features Section */}
       <section className="px-4 py-16 md:py-24 bg-gradient-to-b from-amber-100 to-amber-50 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-center mb-4">
@@ -547,7 +556,10 @@ export default function Home() {
                 <br />
                 <span className="text-black">GROW, AND DREAM</span>
               </h2>
-              <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:scale-105 transition-transform shadow-2xl">
+              <button 
+                onClick={openModal}
+                className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:scale-105 transition-transform shadow-2xl"
+              >
                 Join The Waitlist
               </button>
             </div>
@@ -603,6 +615,84 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Waitlist Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50">
+          <div className="relative bg-white rounded-3xl max-w-md w-full mx-auto overflow-hidden shadow-2xl">
+            {/* Close Button */}
+            <button 
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-10 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+            >
+              <X size={18} className="text-gray-600" />
+            </button>
+
+            {/* Modal Content */}
+            <div className="bg-gradient-to-b from-amber-50 to-white p-8">
+              {/* Header */}
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-black text-gray-800 mb-2">
+                  JOIN THE WAITLIST
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Be the first to know when Mojik is available!
+                </p>
+              </div>
+
+              {/* Form */}
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Child's Age
+                  </label>
+                  <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all">
+                    <option value="">Select age range</option>
+                    <option value="0-2">0-2 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="6-8">6-8 years</option>
+                    <option value="9-12">9-12 years</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-orange-400 to-orange-500 text-white py-4 rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-lg"
+                >
+                  Join Waitlist
+                </button>
+              </form>
+
+              {/* Footer Text */}
+              <p className="text-center text-xs text-gray-500 mt-4">
+                By joining, you agree to our Privacy Policy and Terms of Service
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -81,205 +81,180 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="px-4 py-16 md:py-24 bg-gradient-to-b from-amber-100 to-amber-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-center mb-4">
-            <span className="text-4xl md:text-6xl lg:text-7xl font-black">
-              <span style={{ color: '#87CEEB' }}>H</span>
-              <span style={{ color: '#90EE90' }}>i</span>
-              <span style={{ color: '#FFD700' }}>, </span>
-              <span style={{ color: '#FF6B6B' }}>I</span>
-              <span style={{ color: '#DDA0DD' }}>'</span>
-              <span style={{ color: '#FFA500' }}>M </span>
-              <span style={{ color: '#FF6B6B' }}>M</span>
-              <span style={{ color: '#FFA500' }}>O</span>
-              <span style={{ color: '#90EE90' }}>J</span>
-              <span style={{ color: '#87CEEB' }}>I</span>
-              <span style={{ color: '#FFB6C1' }}>K</span>
-              <span style={{ color: '#FFD700' }}>,</span>
-            </span>
-          </h2>
-          <p className="text-center text-2xl md:text-3xl font-bold text-white mb-12">
-            A MAGICAL AI TOY HERE
-            <br />
-            TO GROW WITH YOUR CHILD
-          </p>
+{/* Features Section */}
+<section className="px-4 py-16 md:py-24 bg-gradient-to-b from-amber-100 to-amber-50 overflow-hidden">
+  <div className="max-w-7xl mx-auto">
+    <h2 className="text-center mb-4">
+      <span className="text-4xl md:text-5xl lg:text-6xl font-black">
+        <span style={{ color: '#87CEEB' }}>H</span>
+        <span style={{ color: '#90EE90' }}>i</span>
+        <span style={{ color: '#FFD700' }}>, </span>
+        <span style={{ color: '#87CEEB' }}>I</span>
+        <span style={{ color: '#DDA0DD' }}>'</span>
+        <span style={{ color: '#FFA500' }}>m </span>
+        <span style={{ color: '#FF6B6B' }}>M</span>
+        <span style={{ color: '#FFA500' }}>o</span>
+        <span style={{ color: '#90EE90' }}>j</span>
+        <span style={{ color: '#87CEEB' }}>i</span>
+        <span style={{ color: '#FFB6C1' }}>k</span>
+        <span style={{ color: '#FFD700' }}>,</span>
+      </span>
+    </h2>
+    <p className="text-center text-xl md:text-2xl font-bold text-white mb-12">
+      a magical AI toy here
+      <br />
+      to grow with your child
+    </p>
 
-          {/* Circular Layout Container */}
-          <div className="relative mx-auto" style={{ width: '100%', maxWidth: '1200px', height: '900px' }}>
-            {/* Decorative dots */}
-            <div className="absolute top-32 left-1/4 w-12 h-12 bg-green-300 rounded-full opacity-60"></div>
-            <div className="absolute top-20 left-1/3 w-8 h-8 bg-blue-300 rounded-full opacity-60"></div>
-            <div className="absolute top-28 right-1/4 w-10 h-10 bg-blue-400 rounded-full opacity-60"></div>
-            <div className="absolute top-20 right-1/3 w-12 h-12 bg-purple-300 rounded-full opacity-60"></div>
-            <div className="absolute bottom-32 left-1/4 w-10 h-10 bg-purple-300 rounded-full opacity-60"></div>
-            <div className="absolute bottom-32 right-1/4 w-10 h-10 bg-purple-400 rounded-full opacity-60"></div>
+    {/* Features Layout Container */}
+    <div className="relative mx-auto" style={{ width: '100%', maxWidth: '1400px', minHeight: '800px' }}>
+      {/* Decorative dots */}
+      <div className="absolute top-24 left-32 w-12 h-12 bg-green-300 rounded-full opacity-60"></div>
+      <div className="absolute top-32 left-48 w-8 h-8 bg-blue-300 rounded-full opacity-60"></div>
+      <div className="absolute top-24 right-32 w-12 h-12 bg-blue-400 rounded-full opacity-60"></div>
+      <div className="absolute top-32 right-48 w-10 h-10 bg-purple-300 rounded-full opacity-60"></div>
+      <div className="absolute bottom-40 left-1/4 w-10 h-10 bg-purple-300 rounded-full opacity-60"></div>
+      <div className="absolute bottom-48 right-1/4 w-10 h-10 bg-purple-400 rounded-full opacity-60"></div>
 
-            {/* Center Mojik */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-              <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full flex items-center justify-center shadow-2xl">
-                  <img 
-                    src="/Images/baby.png"
-                    alt="Mojik Center"
-                    className="w-48 h-48 md:w-60 md:h-60 object-contain"
-                  />
-                </div>
-                <div className="absolute top-2 left-4 w-8 h-8 bg-yellow-300 rounded-full"></div>
-                <div className="absolute -top-2 -left-2 w-6 h-6 bg-green-300 rounded-full"></div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-purple-300 rounded-full"></div>
-                <div className="absolute -bottom-2 right-12 w-8 h-8 bg-blue-500 rounded-full"></div>
-              </div>
-            </div>
+      {/* Center Mojik with Blue Background */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+        <div className="relative">
+          <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full flex items-center justify-center shadow-2xl" style={{ backgroundColor: '#87CEEB' }}>
+            <img 
+              src="/Images/baby.png"
+              alt="Mojik Center"
+              className="w-64 h-64 md:w-80 md:h-80 object-contain"
+            />
+          </div>
+          <div className="absolute top-8 left-8 w-10 h-10 bg-yellow-300 rounded-full"></div>
+        </div>
+      </div>
 
-            {/* Top Left - I spark your curiosity */}
-            <div className="absolute top-28 left-8 md:left-16 flex items-start gap-4 z-10">
-              <div className="relative flex flex-col items-center">
-                <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-xl border-4 border-white">
-                  <img 
-                    src="./Images/assets_task_01k723sn75f3yrph90wsh918f7_1759934161_img_0 2.png"
-                    alt="Kid with Mojik"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-green-300 rounded-full"></div>
-              </div>
-              <div className="relative mt-8">
-                {/* Speech bubble tail */}
-                <div className="absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 w-8 h-8">
-                  <svg width="32" height="32" viewBox="0 0 32 32">
-                    <path d="M32 16 L0 8 L0 24 Z" fill="#FCE7F3" />
-                  </svg>
-                </div>
-                <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I spark your curiosity</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Top Right - I make art & crafts */}
-            <div className="absolute top-28 right-8 md:right-16 flex items-start gap-4 z-10">
-              <div className="relative mt-8">
-                {/* Speech bubble tail */}
-                <div className="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2 w-8 h-8">
-                  <svg width="32" height="32" viewBox="0 0 32 32">
-                    <path d="M0 16 L32 8 L32 24 Z" fill="#DBEAFE" />
-                  </svg>
-                </div>
-                <div className="bg-blue-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I make art & crafts</p>
-                </div>
-              </div>
-              <div className="relative flex flex-col items-center">
-                <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-xl border-4 border-white">
-                  <img 
-                    src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
-                    alt="Kid making art"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full"></div>
-              </div>
-            </div>
-
-            {/* Middle Left - I inspire your imagination */}
-            <div className="absolute top-1/2 left-4 md:left-12 transform -translate-y-1/2 z-10">
-              <div className="relative">
-                {/* Speech bubble tail */}
-                <div className="absolute left-full top-1/2 transform -translate-y-1/2 w-12 h-8">
-                  <svg width="48" height="32" viewBox="0 0 48 32">
-                    <path d="M0 16 L48 8 L48 24 Z" fill="#E9D5FF" />
-                  </svg>
-                </div>
-                <div className="bg-purple-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I inspire your imagination</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Middle Right - I teach new languages */}
-            <div className="absolute top-1/2 right-4 md:right-12 transform -translate-y-1/2 z-10">
-              <div className="relative">
-                {/* Speech bubble tail */}
-                <div className="absolute right-full top-1/2 transform -translate-y-1/2 w-12 h-8">
-                  <svg width="48" height="32" viewBox="0 0 48 32">
-                    <path d="M48 16 L0 8 L0 24 Z" fill="#CCFBF1" />
-                  </svg>
-                </div>
-                <div className="bg-teal-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I teach new languages</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Left - I create stories with you */}
-            <div className="absolute bottom-32 left-8 md:left-16 flex items-end gap-4 z-10">
-              <div className="relative flex flex-col items-center">
-                <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-xl border-4 border-white">
-                  <img 
-                    src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
-                    alt="Kid with stories"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-yellow-300 rounded-full"></div>
-              </div>
-              <div className="relative mb-8">
-                {/* Speech bubble tail */}
-                <div className="absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 w-8 h-8">
-                  <svg width="32" height="32" viewBox="0 0 32 32">
-                    <path d="M32 16 L0 8 L0 24 Z" fill="#FCE7F3" />
-                  </svg>
-                </div>
-                <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I create stories with you</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom Right - I invent fun new games */}
-            <div className="absolute bottom-32 right-8 md:right-16 flex items-end gap-4 z-10">
-              <div className="relative mb-8">
-                {/* Speech bubble tail */}
-                <div className="absolute right-0 top-1/2 transform translate-x-full -translate-y-1/2 w-8 h-8">
-                  <svg width="32" height="32" viewBox="0 0 32 32">
-                    <path d="M0 16 L32 8 L32 24 Z" fill="#FCE7F3" />
-                  </svg>
-                </div>
-                <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
-                  <p className="font-bold text-gray-800 text-sm md:text-base whitespace-nowrap">I invent fun new games</p>
-                </div>
-              </div>
-              <div className="relative flex flex-col items-center">
-                <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden shadow-xl border-4 border-white">
-                  <img 
-                    src="./Images/20251008_1702_Boy Sleeping Peacefully_remix_01k721yq9mfsb9z1jcp3q90fb8 2.png"
-                    alt="Happy kid"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-400 rounded-full"></div>
-              </div>
-            </div>
-
-            {/* Bottom center - I build your confidence */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-              <div className="relative">
-                {/* Decorative lines */}
-                <div className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-full">
-                  <svg width="4" height="60" viewBox="0 0 4 60">
-                    <line x1="2" y1="0" x2="2" y2="60" stroke="#C4B5FD" strokeWidth="3" strokeDasharray="5,5"/>
-                  </svg>
-                </div>
-                <div className="bg-purple-200 rounded-3xl px-8 py-4 shadow-lg">
-                  <p className="font-bold text-gray-800 text-center text-sm md:text-base">I build your confidence</p>
-                </div>
-              </div>
-            </div>
+      {/* Top Left - I spark your curiosity */}
+      <div className="absolute top-20 left-4 md:left-20 flex items-center gap-3 z-10">
+        <div className="relative flex flex-col items-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
+            <img 
+              src="./Images/assets_task_01k723sn75f3yrph90wsh918f7_1759934161_img_0 2.png"
+              alt="Kid with Mojik"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute -top-2 -left-2 w-8 h-8 bg-green-300 rounded-full"></div>
+          <div className="absolute -bottom-3 left-2 flex gap-1">
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform -rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
           </div>
         </div>
-      </section>
+        <div className="relative">
+          <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I spark your<br/>curiosity</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Top Right - I make art & crafts */}
+      <div className="absolute top-20 right-4 md:right-20 flex items-center gap-3 z-10">
+        <div className="relative">
+          <div className="bg-white rounded-3xl px-6 py-3 shadow-lg border-2 border-gray-200">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I make art &<br/>crafts</p>
+          </div>
+        </div>
+        <div className="relative flex flex-col items-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
+            <img 
+              src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
+              alt="Kid making art"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full"></div>
+          <div className="absolute -bottom-3 right-2 flex gap-1">
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform -rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Middle Left - I inspire your imagination */}
+      <div className="absolute top-1/2 left-2 md:left-8 transform -translate-y-1/2 z-10">
+        <div className="relative">
+          <div className="bg-blue-100 rounded-3xl px-6 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I inspire your<br/>imagination</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Middle Right - I teach new languages */}
+      <div className="absolute top-1/2 right-2 md:right-8 transform -translate-y-1/2 z-10">
+        <div className="relative">
+          <div className="bg-teal-100 rounded-3xl px-6 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I teach new<br/>languages</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Left - I create stories with you */}
+      <div className="absolute bottom-20 left-4 md:left-20 flex items-center gap-3 z-10">
+        <div className="relative flex flex-col items-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
+            <img 
+              src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
+              alt="Kid with stories"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute -top-2 -left-2 w-8 h-8 bg-yellow-300 rounded-full"></div>
+          <div className="absolute -bottom-3 left-2 flex gap-1">
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform -rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+          </div>
+        </div>
+        <div className="relative">
+          <div className="bg-purple-100 rounded-3xl px-6 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I create stories<br/>with you</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Right - I invent fun new games */}
+      <div className="absolute bottom-20 right-4 md:right-20 flex items-center gap-3 z-10">
+        <div className="relative">
+          <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I invent fun<br/>new games</p>
+          </div>
+        </div>
+        <div className="relative flex flex-col items-center">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
+            <img 
+              src="./Images/20251008_1702_Boy Sleeping Peacefully_remix_01k721yq9mfsb9z1jcp3q90fb8 2.png"
+              alt="Happy kid"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-400 rounded-full"></div>
+          <div className="absolute -bottom-3 right-2 flex gap-1">
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform -rotate-12"></div>
+            <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom center - I build your confidence */}
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10">
+        <div className="relative">
+          <div className="bg-purple-200 rounded-3xl px-8 py-3 shadow-lg">
+            <p className="font-medium text-gray-800 text-center text-sm md:text-base">I build your confidence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* App Section */}
       <section className="relative px-4 py-16 md:py-24 bg-gradient-to-br from-purple-400 via-purple-500 to-blue-500 overflow-hidden">
@@ -552,9 +527,9 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 md:mb-8 drop-shadow-lg leading-tight">
                 PRE-ORDER MOJIK AND
                 <br />
-                <span className="text-black">HELP YOUR CHILD LEARN,</span>
+                <span className="text-black text-white">HELP YOUR CHILD LEARN,</span>
                 <br />
-                <span className="text-black">GROW, AND DREAM</span>
+                <span className="text-black text-white">GROW, AND DREAM</span>
               </h2>
               <button 
                 onClick={openModal}

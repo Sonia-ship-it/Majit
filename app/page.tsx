@@ -13,7 +13,7 @@ export default function Home() {
       {/* Header */}
       <header className="flex justify-between items-center p-4 md:p-6 absolute top-0 left-0 right-0 z-10">
         <div className="flex items-center gap-2">
-          <span className="text-white font-bold text-lg md:text-xl">(~.~) MOJIK AI</span>
+          <span className="text-white superVanilla text-lg md:text-xl">(~.~) MOJIK AI</span>
         </div>
         <div className="flex gap-2 md:gap-3">
           <button className="w-9 h-9 md:w-10 md:h-10 bg-pink-400 rounded-lg flex items-center justify-center hover:scale-110 transition-transform">
@@ -48,11 +48,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-amber-700/40" />
         
         <div className="relative z-10 text-center max-w-4xl mx-auto">
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 drop-shadow-lg">
+          <div className='flex justify-center items-center'>
+          <img src="./Images/Union.png" className='-rotate-45' />
+          <img src="./Images/Union.png"/>
+          </div>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-4 drop-shadow-lg superVanilla">
             WHERE AI MEETS
           </h1>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 drop-shadow-lg">
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black superVanilla mb-8 drop-shadow-lg">
             <span style={{ color: '#90EE90' }}>I</span>
             <span style={{ color: '#DDA0DD' }}>M</span>
             <span style={{ color: '#FF6B6B' }}>a</span>
@@ -66,8 +69,8 @@ export default function Home() {
             <span style={{ color: '#FFD700' }}>N</span>
           </h2>
           
-          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-            Mojik AI brings stories, emotions, and play together —
+          <p className="text-white gilroy-r text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+            Mojik AI brings <span style={{ color: '#FCCF80'}}> stories, emotions, and play together —</span>
             <br />
             helping kids learn through love and laughter
           </p>
@@ -83,8 +86,8 @@ export default function Home() {
 
 {/* Features Section */}
 <section className="px-4 py-16 md:py-24 overflow-hidden" style={{ backgroundColor: '#FCCF80'}}>
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-center mb-4">
+  <div className="max-w-7xl mx-auto relative">
+    <h2 className="text-center mb-4 superVanilla">
       <span className="text-4xl md:text-5xl lg:text-6xl font-black">
         <span style={{ color: '#87CEEB' }}>H</span>
         <span style={{ color: '#90EE90' }}>i</span>
@@ -100,7 +103,7 @@ export default function Home() {
         <span style={{ color: '#FFD700' }}>,</span>
       </span>
     </h2>
-    <p className="text-center text-xl md:text-2xl font-bold text-white mb-12">
+    <p className="text-center superVanilla text-xl md:text-2xl lg:text-5xl  text-white absolute top-32 right-80 z-30">
       a magical AI toy here
       <br />
       to grow with your child
@@ -119,9 +122,8 @@ export default function Home() {
       {/* Center Mojik with Blue Background */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-2">
         <div className="relative">
-          {/* <div className="w-80 h-80 md:w-full md:h-full rounded-full flex items-center justify-center" style={{ backgroundColor: '#FCCF80' }}> */}
 
-                <div className="relative w-72 h-72 md:w-96 md:h-96">
+                <div className="relative w-80 h-80  md:scale-200">
                   <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
                     <defs>
                       <clipPath id="blob-right">
@@ -133,23 +135,17 @@ export default function Home() {
                     <img 
                       src="./Images/cat.png"
                       alt="Kids playing with Mojik"
-                      className="size-96  object-cover"
+                      className="object-cover"
                     />
                   </div>
                 </div>
-            {/* <img 
-              src="/Images/baby.png"
-              alt="Mojik Center"
-              className="w-64 h-64 md:w-80 md:h-80 object-contain"
-            /> */}
-
-          {/* </div> */}
+  
           <div className="absolute top-8 left-8 w-10 h-10 bg-yellow-300 rounded-full"></div>
         </div>
       </div>
 
       {/* Top Left - I spark your curiosity */}
-      <div className="absolute top-20 left-4 md:left-20 flex items-center gap-3 z-10">
+      <div className="absolute top-20 -left-10  flex items-center gap-3 z-10">
         <div className="relative flex flex-col items-center">
           
 
@@ -170,12 +166,6 @@ export default function Home() {
                   </div>
                 </div>
 
-
-            {/* <img 
-              src="./Images/assets_task_01k723sn75f3yrph90wsh918f7_1759934161_img_0 2.png"
-              alt="Kid with Mojik"
-              className="w-full h-full object-cover"
-            /> */}
           
           <div className="absolute -top-2 -left-2 w-8 h-8 bg-green-300 rounded-full"></div>
           <div className="absolute -bottom-3 left-2 flex gap-1">
@@ -192,24 +182,24 @@ export default function Home() {
       </div>
 
       {/* Top Right - I make art & crafts */}
-      <div className="absolute top-2 right-4 md:right-20 flex items-center gap-3 z-10">
-        <div className="absolute right-72 top-44">
-          <div className="bg-white rounded-3xl px-6 py-3 shadow-lg border-2 border-gray-200">
+      <div className="absolute top-20 right-0 md:right-2 flex items-center gap-3 z-20">
+        <div className="absolute right-68 top-36">
+          <div className="bg-white rounded-3xl px-6 py-3 shadow-lg me-20">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I make art &<br/>crafts</p>
           </div>
         </div>
         <div className="relative flex flex-col items-center">
-          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
+
 
                          <div className="relative w-72 h-72 md:w-96 md:h-96">
-                  <svg className="absolute inset-0 w-72 h-72" viewBox="0 0 400 400">
+                  <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
                     <defs>
                       <clipPath id="blob-right">
                         <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
                       </clipPath>
                     </defs>
                   </svg>
-                  <div className="relative ms-20 inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                  <div className="absolute inset-0" style={{ clipPath: 'url(#blob-right)' }}>
                     <img 
                       src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
                       alt="Kids playing with Mojik"
@@ -218,12 +208,7 @@ export default function Home() {
                   </div>
                 </div>
 
-            {/* <img 
-              src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
-              alt="Kid making art"
-              className="w-full h-full object-cover"
-            /> */}
-          {/* </div> */}
+       
           <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full"></div>
           <div className="absolute -bottom-3 right-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -234,7 +219,7 @@ export default function Home() {
       </div>
 
       {/* Middle Left - I inspire your imagination */}
-      <div className="absolute top-1/2 left-2 md:left-8 transform -translate-y-1/2 z-10">
+      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 z-10">
         <div className="absolute left-80 ">
           <div className="bg-blue-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I inspire your<br/>imagination</p>
@@ -244,7 +229,7 @@ export default function Home() {
 
       {/* Middle Right - I teach new languages */}
       <div className="absolute top-1/2 right-2 md:right-8 transform -translate-y-1/2 z-10">
-        <div className="absolute right-80">
+        <div className="absolute right-72">
           <div className="bg-teal-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I teach new<br/>languages</p>
           </div>
@@ -255,8 +240,7 @@ export default function Home() {
       <div className="absolute  left-4 top-96 mt-18 md:left-18 flex items-center gap-3 z-10">
         <div className="relative flex flex-col items-center">
 
-          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
-            <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden me-40">
+            <div className="absolute top-12 left-0 w-72 h-72 md:w-96 md:h-96 overflow-hidden ">
                   <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
                     <defs>
                       <clipPath id="blob-right">
@@ -264,7 +248,7 @@ export default function Home() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <div className="relative z-20  inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                  <div className="relative z-10  inset-0" style={{ clipPath: 'url(#blob-right)' }}>
                     <img 
                       src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
                       alt="Kids playing with Mojik"
@@ -274,12 +258,7 @@ export default function Home() {
                 </div>
 
           
-            {/* <img 
-              src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
-              alt="Kid with stories"
-              className="w-full h-full object-cover"
-            /> */}
-          {/* </div> */}
+        
           <div className="absolute -top-2 -left-2 w-8 h-8 bg-yellow-300 rounded-full"></div>
           <div className="absolute -bottom-3 left-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -287,7 +266,7 @@ export default function Home() {
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
           </div>
         </div>
-        <div className="absolute left-80 mb-44">
+        <div className="absolute left-72  top-14 mb-44">
           <div className="bg-purple-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I create stories<br/>with you</p>
           </div>
@@ -295,15 +274,15 @@ export default function Home() {
       </div>
 
       {/* Bottom Right - I invent fun new games */}
-      <div className="absolute top-80 mt-10 right-4 md:right-0 flex items-center gap-3 z-10">
-        <div className="absolute bottom-32 right-80">
-          <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
+      <div className="absolute top-80 mt-10 right-4 md:right-16 flex items-center gap-3 z-10">
+        <div className="absolute top-40 right-80">
+          <div className="bg-pink-100 rounded-3xl px-6 py-3">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I invent fun<br/>new games</p>
           </div>
         </div>
         <div className="relative flex flex-col items-center">
-          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
-  <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden me-10">
+      
+  <div className="absolute right-0 top-20 w-72 h-72 md:w-96 md:h-96 overflow-hidden">
                   <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
                     <defs>
                       <clipPath id="blob-right">
@@ -311,7 +290,7 @@ export default function Home() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <div className="relative z-20  ms-20 inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                  <div className="absolute inset-0" style={{ clipPath: 'url(#blob-right)' }}>
                     <img 
                       src="./Images/20251008_1702_Boy Sleeping Peacefully_remix_01k721yq9mfsb9z1jcp3q90fb8 2.png"
                       alt="Kids playing with Mojik"
@@ -368,7 +347,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 text-white">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 superVanilla">
                 STAY CONNECTED
                 <br />
                 AND IN CONTROL
@@ -385,31 +364,31 @@ export default function Home() {
                   <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Track usage and conversations</span>
+                  <span className='gilroy-m text-xl'>Track usage and conversations</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Get insights and progress updates</span>
+                  <span className='gilroy-m text-xl'>Get insights and progress updates</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Add context and special moments</span>
+                  <span className='gilroy-m text-xl'>Add context and special moments</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Personalize your Mojik experience</span>
+                  <span className='gilroy-m text-xl'>Personalize your Mojik experience</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
                     <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span>Set routines and healthy limits</span>
+                  <span className='gilroy-m text-xl'>Set routines and healthy limits</span>
                 </li>
               </ul>
             </div>
@@ -619,12 +598,12 @@ export default function Home() {
 
             {/* Center Text */}
             <div className="flex-1 text-center px-4 max-w-2xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 md:mb-8 drop-shadow-lg leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl  whitespace-nowrap text-white mb-6 md:mb-8 superVanilla">
                 PRE-ORDER MOJIK AND
                 <br />
-                <span className="text-black text-white">HELP YOUR CHILD LEARN,</span>
+                <span className=" text-white">HELP YOUR CHILD LEARN,</span>
                 <br />
-                <span className="text-black text-white">GROW, AND DREAM</span>
+                <span className=" text-white">GROW, AND DREAM</span>
               </h2>
               <button 
                 onClick={openModal}
@@ -663,10 +642,11 @@ export default function Home() {
       </section>
       
       {/* Footer */}
-      <footer className="bg-amber-100 px-4 py-8 ">
+      <footer style={{ backgroundColor: '#FCCF80'}} className="px-4 py-8 ">
         <div className="max-w-7xl mx-auto flex flex-col  md:flex-row md:justify-center gap-4">
-          <div className="flex md:absolute gap-2 md:left-20">
-            <span className="text-amber-900 font-bold text-lg">(~.~) MOJIK AI</span>
+          <div className="flex flex-col leading-2 md:absolute gap-2 md:left-20">
+            <span className="text-white  superVanilla text-2xl">(~.~) MOJIK AI</span>
+            <p className='text-white gilroy-r'>Mojik AI 2025 © All Rights Reserved</p>
           </div>
           
           <div className="flex flex-col md:flex-row gap-4">

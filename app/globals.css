@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@font-face {
+  font-family: 'SuperVanilla';
+  src: url('/fonts/super-vanilla/SuperVanilla-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroy-r';
+  src: url('/fonts/gilroy/Gilroy-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroy-m';
+  src: url('/fonts/gilroy/Gilroy-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroy-b';
+  src: url('/fonts/gilroy/Gilroy-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.gilroy-r {
+  font-family: 'gilroy-r', sans-serif;
+}
+.gilroy-m {
+ font-family: 'gilroy-m', sans-serif;
+}
+.gilroy-b {
+ font-family: 'gilroy-b', sans-serif;
+}
+.superVanilla {
+  font-family: 'SuperVanilla', sans-serif;
+}

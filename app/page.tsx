@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
 {/* Features Section */}
-<section className="px-4 py-16 md:py-24 bg-gradient-to-b from-amber-100 to-amber-50 overflow-hidden">
+<section className="px-4 py-16 md:py-24 overflow-hidden" style={{ backgroundColor: '#FCCF80'}}>
   <div className="max-w-7xl mx-auto">
     <h2 className="text-center mb-4">
       <span className="text-4xl md:text-5xl lg:text-6xl font-black">
@@ -117,15 +117,33 @@ export default function Home() {
       <div className="absolute bottom-48 right-1/4 w-10 h-10 bg-purple-400 rounded-full opacity-60"></div>
 
       {/* Center Mojik with Blue Background */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-2">
         <div className="relative">
-          <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-blue-300 to-blue-400 rounded-full flex items-center justify-center shadow-2xl" style={{ backgroundColor: '#87CEEB' }}>
-            <img 
+          {/* <div className="w-80 h-80 md:w-full md:h-full rounded-full flex items-center justify-center" style={{ backgroundColor: '#FCCF80' }}> */}
+
+                <div className="relative w-72 h-72 md:w-96 md:h-96">
+                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400">
+                    <defs>
+                      <clipPath id="blob-right">
+                        <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div className="absolute inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                    <img 
+                      src="./Images/cat.png"
+                      alt="Kids playing with Mojik"
+                      className="size-96  object-cover"
+                    />
+                  </div>
+                </div>
+            {/* <img 
               src="/Images/baby.png"
               alt="Mojik Center"
               className="w-64 h-64 md:w-80 md:h-80 object-contain"
-            />
-          </div>
+            /> */}
+
+          {/* </div> */}
           <div className="absolute top-8 left-8 w-10 h-10 bg-yellow-300 rounded-full"></div>
         </div>
       </div>
@@ -133,13 +151,32 @@ export default function Home() {
       {/* Top Left - I spark your curiosity */}
       <div className="absolute top-20 left-4 md:left-20 flex items-center gap-3 z-10">
         <div className="relative flex flex-col items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
-            <img 
+          
+
+                <div className="relative w-72 h-72 md:w-96 md:h-96">
+                  <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
+                    <defs>
+                      <clipPath id="blob-right">
+                        <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div className="absolute inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                    <img 
+                      src="./Images/assets_task_01k723sn75f3yrph90wsh918f7_1759934161_img_0 2.png"
+                      alt="Kids playing with Mojik"
+                      className="size-96  object-cover"
+                    />
+                  </div>
+                </div>
+
+
+            {/* <img 
               src="./Images/assets_task_01k723sn75f3yrph90wsh918f7_1759934161_img_0 2.png"
               alt="Kid with Mojik"
               className="w-full h-full object-cover"
-            />
-          </div>
+            /> */}
+          
           <div className="absolute -top-2 -left-2 w-8 h-8 bg-green-300 rounded-full"></div>
           <div className="absolute -bottom-3 left-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -147,7 +184,7 @@ export default function Home() {
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
           </div>
         </div>
-        <div className="relative">
+        <div className="absolute left-96 mb-4">
           <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I spark your<br/>curiosity</p>
           </div>
@@ -155,20 +192,38 @@ export default function Home() {
       </div>
 
       {/* Top Right - I make art & crafts */}
-      <div className="absolute top-20 right-4 md:right-20 flex items-center gap-3 z-10">
-        <div className="relative">
+      <div className="absolute top-2 right-4 md:right-20 flex items-center gap-3 z-10">
+        <div className="absolute right-72 top-44">
           <div className="bg-white rounded-3xl px-6 py-3 shadow-lg border-2 border-gray-200">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I make art &<br/>crafts</p>
           </div>
         </div>
         <div className="relative flex flex-col items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
-            <img 
+          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
+
+                         <div className="relative w-72 h-72 md:w-96 md:h-96">
+                  <svg className="absolute inset-0 w-72 h-72" viewBox="0 0 400 400">
+                    <defs>
+                      <clipPath id="blob-right">
+                        <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div className="relative ms-20 inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                    <img 
+                      src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
+                      alt="Kids playing with Mojik"
+                      className="size-96  object-cover"
+                    />
+                  </div>
+                </div>
+
+            {/* <img 
               src="./Images/20251008_1507_Игрушка с радужным экраном_remix_01k71vcztyfvq9477096baapfy 1.png"
               alt="Kid making art"
               className="w-full h-full object-cover"
-            />
-          </div>
+            /> */}
+          {/* </div> */}
           <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-400 rounded-full"></div>
           <div className="absolute -bottom-3 right-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -180,7 +235,7 @@ export default function Home() {
 
       {/* Middle Left - I inspire your imagination */}
       <div className="absolute top-1/2 left-2 md:left-8 transform -translate-y-1/2 z-10">
-        <div className="relative">
+        <div className="absolute left-80 ">
           <div className="bg-blue-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I inspire your<br/>imagination</p>
           </div>
@@ -189,7 +244,7 @@ export default function Home() {
 
       {/* Middle Right - I teach new languages */}
       <div className="absolute top-1/2 right-2 md:right-8 transform -translate-y-1/2 z-10">
-        <div className="relative">
+        <div className="absolute right-80">
           <div className="bg-teal-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I teach new<br/>languages</p>
           </div>
@@ -197,15 +252,34 @@ export default function Home() {
       </div>
 
       {/* Bottom Left - I create stories with you */}
-      <div className="absolute bottom-20 left-4 md:left-20 flex items-center gap-3 z-10">
+      <div className="absolute  left-4 top-96 mt-18 md:left-18 flex items-center gap-3 z-10">
         <div className="relative flex flex-col items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
-            <img 
+
+          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
+            <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden me-40">
+                  <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
+                    <defs>
+                      <clipPath id="blob-right">
+                        <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div className="relative z-20  inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                    <img 
+                      src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
+                      alt="Kids playing with Mojik"
+                      className="size-96  object-cover"
+                    />
+                  </div>
+                </div>
+
+          
+            {/* <img 
               src="./Images/assets_task_01k7218cwned18jzw84xb5p9x9_1759931409_img_0 1.png"
               alt="Kid with stories"
               className="w-full h-full object-cover"
-            />
-          </div>
+            /> */}
+          {/* </div> */}
           <div className="absolute -top-2 -left-2 w-8 h-8 bg-yellow-300 rounded-full"></div>
           <div className="absolute -bottom-3 left-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -213,7 +287,7 @@ export default function Home() {
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
           </div>
         </div>
-        <div className="relative">
+        <div className="absolute left-80 mb-44">
           <div className="bg-purple-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I create stories<br/>with you</p>
           </div>
@@ -221,20 +295,37 @@ export default function Home() {
       </div>
 
       {/* Bottom Right - I invent fun new games */}
-      <div className="absolute bottom-20 right-4 md:right-20 flex items-center gap-3 z-10">
-        <div className="relative">
+      <div className="absolute top-80 mt-10 right-4 md:right-0 flex items-center gap-3 z-10">
+        <div className="absolute bottom-32 right-80">
           <div className="bg-pink-100 rounded-3xl px-6 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-sm md:text-base whitespace-nowrap">I invent fun<br/>new games</p>
           </div>
         </div>
         <div className="relative flex flex-col items-center">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white">
-            <img 
+          {/* <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl border-4 border-white"> */}
+  <div className="relative w-72 h-72 md:w-96 md:h-96 overflow-hidden me-10">
+                  <svg className="absolute inset-0 w-96 h-96" viewBox="0 0 400 400">
+                    <defs>
+                      <clipPath id="blob-right">
+                        <path d="M 200,20 C 280,30 350,90 370,160 C 390,230 370,300 310,350 C 250,400 170,390 100,340 C 30,290 20,210 50,140 C 80,70 120,10 200,20 Z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div className="relative z-20  ms-20 inset-0" style={{ clipPath: 'url(#blob-right)' }}>
+                    <img 
+                      src="./Images/20251008_1702_Boy Sleeping Peacefully_remix_01k721yq9mfsb9z1jcp3q90fb8 2.png"
+                      alt="Kids playing with Mojik"
+                      className="size-96  object-cover"
+                    />
+                  </div>
+                </div>
+
+            {/* <img 
               src="./Images/20251008_1702_Boy Sleeping Peacefully_remix_01k721yq9mfsb9z1jcp3q90fb8 2.png"
               alt="Happy kid"
               className="w-full h-full object-cover"
-            />
-          </div>
+            /> */}
+          {/* </div> */}
           <div className="absolute -top-2 -right-2 w-8 h-8 bg-purple-400 rounded-full"></div>
           <div className="absolute -bottom-3 right-2 flex gap-1">
             <div className="w-2 h-6 bg-orange-300 rounded-full transform rotate-12"></div>
@@ -245,7 +336,7 @@ export default function Home() {
       </div>
 
       {/* Bottom center - I build your confidence */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-36 left-1/2 transform -translate-x-1/2 z-10">
         <div className="relative">
           <div className="bg-purple-200 rounded-3xl px-8 py-3 shadow-lg">
             <p className="font-medium text-gray-800 text-center text-sm md:text-base">I build your confidence</p>
@@ -323,13 +414,13 @@ export default function Home() {
               </ul>
             </div>
             
-            <div className="flex-1 flex justify-center">
+   <div className="flex-1 flex justify-center">
               {/* iPhone Mockup */}
-              <div className="relative w-80 md:w-96 transform hover:scale-105 transition-transform">
+              <div className="relative w-80 md:w-96 transform hover:scale-105 transition-transform rotate-6">
                 {/* iPhone Frame */}
-                <div className="relative bg-black rounded-[3rem] shadow-2xl p-3">
+                <div className="relative  rounded-[3rem] shadow-2xl p-3">
                   {/* Notch */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-7 bg-black rounded-b-3xl z-20"></div>
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-7  rounded-b-3xl z-20"></div>
                   
                   {/* Screen */}
                   <div className="bg-white rounded-[2.5rem] overflow-hidden">
@@ -471,9 +562,13 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
+
             </div>
+            
           </div>
         </div>
       </section>
@@ -568,13 +663,13 @@ export default function Home() {
       </section>
       
       {/* Footer */}
-      <footer className="bg-amber-100 px-4 py-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
+      <footer className="bg-amber-100 px-4 py-8 ">
+        <div className="max-w-7xl mx-auto flex flex-col  md:flex-row md:justify-center gap-4">
+          <div className="flex md:absolute gap-2 md:left-20">
             <span className="text-amber-900 font-bold text-lg">(~.~) MOJIK AI</span>
           </div>
           
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <button className="w-10 h-10 bg-pink-400 rounded-full hover:scale-110 transition-transform flex items-center justify-center">
               <Instagram size={20} className="text-white" />
             </button>
